@@ -4,21 +4,27 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "seed-dev": "tsx src/seed-dev.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@libsql/client": "0.14.0",
+    "dotenv": "16.4.5",
+    "drizzle-kit": "0.28.1",
+    "drizzle-orm": "0.36.3",
+    "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.13"
+    "tsx": "4.19.2"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
